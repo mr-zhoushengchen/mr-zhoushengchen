@@ -15,7 +15,7 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           pattern: "<!-- issueTable -->"
           state: "open"
-          labels: "BLOG"
+          labels: "读书笔记"
           creator: "mr-zhoushengchen"
           per_page: 10
       - name: add-and-commit
