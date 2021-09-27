@@ -22,12 +22,8 @@
 
 <!-- issueTable -->
 
-1. [test10](https://github.com/mr-zhoushengchen/mr-zhoushengchen/issues/9) 
-2. [test9](https://github.com/mr-zhoushengchen/mr-zhoushengchen/issues/8) 
-3. [test8](https://github.com/mr-zhoushengchen/mr-zhoushengchen/issues/7) 
-4. [test7](https://github.com/mr-zhoushengchen/mr-zhoushengchen/issues/6) 
-5. [我没有新欢，但我有时间](https://github.com/mr-zhoushengchen/mr-zhoushengchen/issues/2) 
-6. [当年万里觅封侯](https://github.com/mr-zhoushengchen/mr-zhoushengchen/issues/1) 
+1. [我没有新欢，但我有时间](https://github.com/mr-zhoushengchen/mr-zhoushengchen/issues/2) 
+2. [当年万里觅封侯](https://github.com/mr-zhoushengchen/mr-zhoushengchen/issues/1) 
 <!-- issueTable -->
 
 后史记载：小南辰王。一生杀伐不绝，赤胆忠心，却在盛年时，被功名所累，渐起谋反之心。幸有清河崔氏识破奸计，王被俘，储君恨之入骨，赐剔骨之刑。 
