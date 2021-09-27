@@ -1,5 +1,8 @@
 ### Hi there 👋
 
+
+<img src="https://github-readme-stats.vercel.app/api?username=mr-zhoushengchen&show_icons=true" alt="logo" height="160" align="right" style="margin: 5px; margin-bottom: 20px;" />
+
 周生辰，是墨宝非宝所著言情小说《一生一世美人骨》男主角。
 
 “醉卧白骨滩，放意且狂歌。一匹马，一壶酒，世上如王有几人？”
@@ -14,6 +17,10 @@
 
 不图名利，心中有家国天下百姓。
 却因与储君之妃时宜有隐秘情事而被处以剔骨之刑。
+
+<img src="https://github-profile-trophy.vercel.app/?username=mr-zhoushengchen&theme=flat&column=7" alt="logo" height="160" align="center" style="margin: auto; margin-bottom: 20px;" />
+
+
 
 后史记载：小南辰王。一生杀伐不绝，赤胆忠心，却在盛年时，被功名所累，渐起谋反之心。幸有清河崔氏识破奸计，王被俘，储君恨之入骨，赐剔骨之刑。 
 
