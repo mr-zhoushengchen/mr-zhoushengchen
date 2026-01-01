@@ -1,3 +1,8 @@
+---
+layout: default
+title: 拾遗集
+---
+
 # 周生辰纲
 
 > [📖 点击进入 Wiki 沉浸阅读](https://github.com/miss-shiyi/miss-shiyi/wiki)
