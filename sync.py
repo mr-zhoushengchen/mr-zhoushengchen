@@ -3,7 +3,7 @@ import os, requests, re, shutil
 from collections import defaultdict
 
 TOKEN = os.environ.get('G_T')
-REPO = "miss-shiyi/miss-shiyi"
+REPO = "mr-zhoushengchen/mr-zhoushengchen"
 
 def sync():
     # 1. 初始化目录
