@@ -1,0 +1,62 @@
+name: Auto Sync System
+
+on:
+  issues:
+    types: [opened, edited, labeled, unlabeled, reopened, closed, deleted]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run Script
+        env:
+          G_T: ${{ secrets.G_T }}
+        run: |
+          pip install requests
+          python sync.py
+
+      - name: Push to Main Branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # 必须包含所有关键文件
+          git add README.md index.md .nojekyll BACKUP/
+          if git diff --staged --quiet; then
+            echo "Main repo no changes"
+          else
+            git commit -m "chore: sync 218+ articles and update index/backup"
+            git push
+          fi
+
+      - name: Push to Wiki
+        env:
+          G_T: ${{ secrets.G_T }}
+        run: |
+          git clone "https://x-access-token:${G_T}@github.com/${{ github.repository }}.wiki.git" wiki_repo
+          cd wiki_repo
+          # 清理旧的 md 文件，保留 .git 目录
+          rm -rf ./*.md
+          cp -r ../wiki_temp/*.md .
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if ! git diff --staged --quiet; then
+            git commit -m "docs: auto-sync wiki contents"
+            # 自动识别 wiki 分支 (master/main)
+            BRANCH=$(git remote show origin | grep 'HEAD branch' | cut -d' ' -f5)
+            git push origin $BRANCH
+          fi
