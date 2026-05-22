@@ -80,8 +80,6 @@ def sync():
                 f.write("\n</details>\n")
             f.write("\n")
 
-        f.write("---\n*最后全量更新: {issues[0]['updated_at'] if all_issues else 'N/A'}*")
-
     # 5. 生成 index.md 和 .nojekyll (确保 GitHub Pages 渲染)
     with open("index.md", "w", encoding="utf-8") as f:
         f.write("---\nlayout: default\ntitle: 拾遗集\n---\n\n")
